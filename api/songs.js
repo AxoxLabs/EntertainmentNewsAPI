@@ -53,7 +53,7 @@ songSites.forEach(music => {
 
                     // legit
                 $('.c-article-card-no-border', html).each(function () {
-                    const title = $(this).text()
+                    const title = $(this).find('span').text()
                     const url = $(this).find('a').attr('href')
                     const time = $(this).find('time').attr('datetime')
                     articles.push({
